@@ -6,7 +6,7 @@
 # qiymatini, o’rta geometrik qiymatini va h.k.larni toping. Asosiy
 # programmada klass turidagi obyektlar hosil qiling. Ulardan foydalanib,
 # masalalarni yeching.
-
+'''
 import math
 
 class matem():
@@ -58,11 +58,66 @@ if __name__ == "__main__":
     obj.minimum(a,b)
     obj.orta_arifmetik(a,b)
     obj.orta_geometrik(a,b)
+'''
 
 # 2. Tomonlarining uzunligi ma‟lum bo’lgan
 # uchburchakka tegishli masalalarni yechish metodlarini o’z ichiga olgan
 # klass yarating. Asosiy programmada klass turidagi obyektlar hosil qiling.
 # Ulardan foydalanib, masalalarni yeching.
+
+class matem():
+    def yig(self, son1, son2):
+        print("Yig'indisi: ", son1+son2)
+
+    def ayir(self, son1, son2):
+        print("Ayirmasi: ",son1-son2)
+
+    def kopaytr(self, son1, son2):
+        print("Kopaytmasi: ",son1*son2)
+
+    def nisbat(self, son1, son2):
+        print("Nisbati: ",son1/son2)
+        
+    def maxsimum(self, son1, son2):
+        lst = [son1, son2]
+        print("Maxsimum: ",max(lst))
+
+    def minimum(self, son1, son2):
+        lst = [son1, son2]
+        print("Minimum: ",min(lst))
+        
+    def orta_arifmetik(self, son1, son2):
+        sum = 0
+        lst = [son1, son2]
+        for i in range(len(lst)):
+            sum +=lst[i]
+        print("O'rta arifmetik: ", sum/len(lst))
+
+        
+    def orta_geometrik(self, son1, son2):
+        sum = 1
+        lst = [son1, son2]
+        for i in range(len(lst)):
+            sum*=lst[i]
+        
+        print("O'rta geometrik: ",math.pow(sum, 1/len(lst)))
+
+if __name__ == "__main__":
+    obj = matem()
+    a = int(input("Son1 :"))
+    b = int(input("Son2 :"))
+    obj.yig(a,b)
+    obj.ayir(a,b)
+    obj.kopaytr(a,b)
+    obj.nisbat(a,b)
+    obj.maxsimum(a,b)
+    obj.minimum(a,b)
+    obj.orta_arifmetik(a,b)
+    obj.orta_geometrik(a,b)
+
+
+
+
 # 3. Ikki sondan eng kattasini va eng kichigini topish
 # uchun klass yaratining. Asosiy programmada bu klass turidagi obyektlar
 # yaratining. Klassdan foydalanib, ikkita sonning eng kattasini va eng
