@@ -105,8 +105,8 @@ if __name__ == "__main__":
 # yaratining. Klassdan foydalanib, ikkita sonning eng kattasini va eng
 # kichigini toping. Xuddi shuningdek, uchta sonning maxsimum va
 # minimumini topishda bu klassdan foydalaning.
-# Parametrli klasslarga doir misollar
 
+'''
 class minvamax():
     def minimum(self, lst):
         return min(lst)
@@ -123,9 +123,9 @@ if __name__ == "__main__":
         else: break
     print("Maximumi: ", obj.maxsimum(lst))    
     print("Minimumi: ", obj.minimum(lst))    
+'''  
     
-    
-
+# Parametrli klasslarga doir misollar
 # 4. 6.1 va 6.2 bo’limlardagi misollarni parametrli klasslar
 # yordamida yeching.
 # 5. 1+2+3+…+n yig’indini va 1·2·3·...·n ko’paytmani
