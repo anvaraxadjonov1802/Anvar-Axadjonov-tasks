@@ -105,7 +105,6 @@ if __name__ == "__main__":
 # yaratining. Klassdan foydalanib, ikkita sonning eng kattasini va eng
 # kichigini toping. Xuddi shuningdek, uchta sonning maxsimum va
 # minimumini topishda bu klassdan foydalaning.
-
 '''
 class minvamax():
     def minimum(self, lst):
