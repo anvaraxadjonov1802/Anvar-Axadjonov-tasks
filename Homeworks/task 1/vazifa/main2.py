@@ -64,6 +64,7 @@ if __name__ == "__main__":
 # uchburchakka tegishli masalalarni yechish metodlarini o’z ichiga olgan
 # klass yarating. Asosiy programmada klass turidagi obyektlar hosil qiling.
 # Ulardan foydalanib, masalalarni yeching.
+'''
 import math
 class uchburchak():
     def perimetri(self, son1, son2, son3):
@@ -96,7 +97,7 @@ if __name__ == "__main__":
     print("Peremetri: ", obj.perimetri(a,b,c))
     print("Ichki radius: ",obj.radius(a,b,c))
     print("Tashqi radius: ",obj.Radius(a,b,c))
-
+'''
 
 
 # 3. Ikki sondan eng kattasini va eng kichigini topish
@@ -105,6 +106,26 @@ if __name__ == "__main__":
 # kichigini toping. Xuddi shuningdek, uchta sonning maxsimum va
 # minimumini topishda bu klassdan foydalaning.
 # Parametrli klasslarga doir misollar
+
+class minvamax():
+    def minimum(self, lst):
+        return min(lst)
+    def maxsimum(self, lst):
+        return max(lst)
+
+if __name__ == "__main__":
+    obj = minvamax()
+    lst = []
+    while True:
+        son = input("Son kiriting: ")
+        if son.isnumeric():
+            lst.append(int(son))
+        else: break
+    print("Maximumi: ", obj.maxsimum(lst))    
+    print("Minimumi: ", obj.minimum(lst))    
+    
+    
+
 # 4. 6.1 va 6.2 bo’limlardagi misollarni parametrli klasslar
 # yordamida yeching.
 # 5. 1+2+3+…+n yig’indini va 1·2·3·...·n ko’paytmani
