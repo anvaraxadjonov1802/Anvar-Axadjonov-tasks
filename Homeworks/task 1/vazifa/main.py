@@ -339,6 +339,7 @@ if __name__ =="__main__":
 
 # 9. Uch xonali butun son berilgan. Bu son raqamlarining
 # yig’indisini va ko’paytmasini toping
+'''
 class raqamlar():
     def yig(self, son):
         return son//100+son%100//10+son%10
@@ -352,6 +353,6 @@ if __name__ == "__main__":
     son = int(input(">> "))
     print(obj.yig(son))
     print(obj.kop(son))
-
+'''
 
 
