@@ -189,18 +189,74 @@ print(dic)
 
 # 1. Ixtiyoriy ikkita son berilgan. Ularning yig„indisini,
 # ayirmasini, ko’paytmasini va nisbatini toping.
+'''
+class hisobla:
+    def yig(self, son1, son2):
+        return son1+son2
+    
+    def ayir(self, son1, son2):
+        return son1-son2
+    
+    def kopaytr(self, son1, son2):
+        return son1*son2
+    
+    def bol(self, son1, son2):
+        if son1 != 0:
+            return son1/son2
+        else:
+            return "0 ni bo'lib bo'lmaydi"
 
-
-
-
-
-
+if __name__ == "__main__":
+    a = int(input("Son1 : "))
+    b = int(input("Son2 : "))
+    obj = hisobla()
+    print(obj.yig(a,b))
+    print(obj.ayir(a,b))
+    print(obj.bol(a,b))
+    print(obj.kopaytr(a,b))
+'''
 
 
 # 2. To’g„ri burchakli uchburchakning katetlari a va b.
 # Uchburchakning yuzi va perimetrini toping.
+'''
+import math
+class uchburchak:
+    def yuzi(self, a,b):
+        return a*b/2
+    
+    def perimetri(self, a,b):
+        return a+b+math.sqrt(a*a+b*b) 
+
+if __name__ == "__main__":
+    obj = uchburchak()
+    a = int(input("A katet : "))
+    b = int(input("B katet : "))
+    print(obj.yuzi(a,b))              
+    print(obj.perimetri(a,b))          
+'''    
+
+
 # 3. Radiusi R bo’lgan aylananing uzunligini va doiraning
 # yuzini toping.
+"""
+# l = 2*p*r
+# s = p*r*r
+pi = 3
+class dumaloq():
+    def uzunlik(self, r):
+        return 2*pi*r
+    
+    def yuzi(self, r):
+        return pi*r*r
+    
+if __name__ == "__main__":
+    obj = dumaloq()
+    r = int(input("Radius: "))
+    print(obj.uzunlik(r))
+    print(obj.yuzi(r))
+"""
+
 # 4. Doiraning yuzi S. Uning radiusini toping.
 # 5. A(x1,y1) va B(x2,y2) nuq‟talar koordinatalari bilan
 # berilgan. Ular orasidagi masofani toping.
