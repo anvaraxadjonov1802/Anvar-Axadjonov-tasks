@@ -284,18 +284,27 @@ if __name__ == "__main__":
 
 # 6. Tekislikda uchburchak uchlarining koordinatasi
 # A(x1,y1) , B(x2,y2) va S(x3,y3). Uchburchakning yuzini toping.
+'''
 import math
-class nuqta():
-    def masofa(self, x1, x2, y1, y2):
+class uchburchak():
+    def __masofa(self, x1, x2, y1, y2):
         return math.sqrt((x2-x1)**2+(y2-y1)**2)
     
+    def yuzi(self, x1, x2, x3, y1, y2, y3):
+        a = self.__masofa(x1, x2, y1, y2)
+        b = self.__masofa(x2, x3, y2, y3)
+        return a*b/2
+    
 if __name__ == "__main__":
-    obj = nuqta()
+    obj = uchburchak()
     x1,x2,x3,y1,y2,y3 = float(input("X1:")),float(input("X2:")), float(input("X3:")), float(input("Y1:")), float(input("Y2:")), float(input("Y3:"))
-    print(obj.masofa(x1, x2, y1, y2))
+    print(obj.yuzi(x1, x2, x3, y1, y2, y3))
+'''
 
 # 7. Ikki sonning o’rta arifmetik va o’rta geometrik
 # q‟iymatlarini toping.
+class orta():
+
 # 8. To’g’ri to’rtburchak diagonali uchlarining
 # koordinatalari berilgan. Uning yuzini toping.
 # 9. Uch xonali butun son berilgan. Bu son raqamlarining
