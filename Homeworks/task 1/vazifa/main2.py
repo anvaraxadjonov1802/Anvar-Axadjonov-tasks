@@ -64,57 +64,38 @@ if __name__ == "__main__":
 # uchburchakka tegishli masalalarni yechish metodlarini o’z ichiga olgan
 # klass yarating. Asosiy programmada klass turidagi obyektlar hosil qiling.
 # Ulardan foydalanib, masalalarni yeching.
-
-class matem():
-    def yig(self, son1, son2):
-        print("Yig'indisi: ", son1+son2)
-
-    def ayir(self, son1, son2):
-        print("Ayirmasi: ",son1-son2)
-
-    def kopaytr(self, son1, son2):
-        print("Kopaytmasi: ",son1*son2)
-
-    def nisbat(self, son1, son2):
-        print("Nisbati: ",son1/son2)
+import math
+class uchburchak():
+    def perimetri(self, son1, son2, son3):
         
-    def maxsimum(self, son1, son2):
-        lst = [son1, son2]
-        print("Maxsimum: ",max(lst))
+        return son1+son2+son3
 
-    def minimum(self, son1, son2):
-        lst = [son1, son2]
-        print("Minimum: ",min(lst))
-        
-    def orta_arifmetik(self, son1, son2):
-        sum = 0
-        lst = [son1, son2]
-        for i in range(len(lst)):
-            sum +=lst[i]
-        print("O'rta arifmetik: ", sum/len(lst))
+    def yuzi(self, son1, son2, son3):
+        yarim = self.perimetri(son1, son2, son3)/2
+        return math.sqrt(yarim*(yarim-son1)*(yarim-son2)*(yarim-son3))
 
+    def radius(self, son1, son2, son3):
+        yarim = self.perimetri(son1, son2, son3)/2
+        yuzi = self.yuzi(son1, son2, son3)
+        return yuzi/yarim
+
+    def Radius(self, son1, son2, son3):
+        yuzi = self.yuzi(son1, son2, son3)
+
+        return (son1*son2*son3)/(4*yuzi)
         
-    def orta_geometrik(self, son1, son2):
-        sum = 1
-        lst = [son1, son2]
-        for i in range(len(lst)):
-            sum*=lst[i]
-        
-        print("O'rta geometrik: ",math.pow(sum, 1/len(lst)))
+    
 
 if __name__ == "__main__":
-    obj = matem()
-    a = int(input("Son1 :"))
-    b = int(input("Son2 :"))
-    obj.yig(a,b)
-    obj.ayir(a,b)
-    obj.kopaytr(a,b)
-    obj.nisbat(a,b)
-    obj.maxsimum(a,b)
-    obj.minimum(a,b)
-    obj.orta_arifmetik(a,b)
-    obj.orta_geometrik(a,b)
+    obj = uchburchak()
+    a = int(input("A tomon :"))
+    b = int(input("B tomon :"))
+    c = int(input("C tomon :"))
 
+    print("Yuzi: ",obj.yuzi(a,b,c))
+    print("Peremetri: ", obj.perimetri(a,b,c))
+    print("Ichki radius: ",obj.radius(a,b,c))
+    print("Tashqi radius: ",obj.Radius(a,b,c))
 
 
 
