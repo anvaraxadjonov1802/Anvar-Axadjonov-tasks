@@ -303,7 +303,35 @@ if __name__ == "__main__":
 
 # 7. Ikki sonning o’rta arifmetik va o’rta geometrik
 # q‟iymatlarini toping.
+'''
+import math
 class orta():
+    def arifmetik(self, lst):
+        sum = 0
+        for i in range(len(lst)):
+            sum +=lst[i]
+        
+        return sum/len(lst)
+    def geometrik(self, lst):
+        sum = 1
+        for i in range(len(lst)):
+            sum*=lst[i]
+        
+        return math.pow(sum, 1/len(lst))
+
+if __name__ =="__main__":
+    obj = orta()
+    lst = []
+    while True:
+        print("To'xtatish uchun son kiritmang")
+        son = input("Son kiriting: ")
+        if son.isnumeric():
+            lst.append(float(son))
+        else: 
+            break
+    print(obj.geometrik(lst))
+    print(obj.arifmetik(lst))
+'''
 
 # 8. To’g’ri to’rtburchak diagonali uchlarining
 # koordinatalari berilgan. Uning yuzini toping.
