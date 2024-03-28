@@ -1,0 +1,8 @@
+
+-- Task 22
+-- SELECT quantity, order_date FROM orders
+-- join order_details ON order_details.order_id = orders.order_id
+-- join products ON order_details.product_id = products.product_id
+-- -- where order_date >= '1996-01-01' and order_date <='1996-12-31'
+-- ORDER BY quantity DESC
+-- LIMIT 10;
