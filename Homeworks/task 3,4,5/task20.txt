@@ -1,5 +1,5 @@
 
--- Task 20 error berdi
+-- Task 20 
 -- select date_trunc('day', order_date) as order_day, count(*) as total_orders
 -- from orders
 -- where extract(year from order_date) = 1997
@@ -7,3 +7,5 @@
 -- group by date_trunc('day', order_date)
 -- order by total_orders desc
 -- limit 5;
+
+-- xato
