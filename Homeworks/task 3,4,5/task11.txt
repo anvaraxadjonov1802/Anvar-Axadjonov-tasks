@@ -1,0 +1,9 @@
+
+-- Task 11
+-- select products.product_id, products.product_name, min(order_details.unit_price) as min_unit_price,
+-- count(*) as total_orders
+-- from products
+-- join order_details on products.product_id = order_details.product_id
+-- group by products.product_id, products.product_name
+-- order by min_unit_price asc
+-- limit 5;

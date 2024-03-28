@@ -1,0 +1,6 @@
+
+-- Task 16
+-- select sum(order_details.unit_price * order_details.quantity) as total_amount
+-- from orders
+-- join order_details on orders.order_id = order_details.order_id
+-- where extract(year from orders.order_date) = 1996;

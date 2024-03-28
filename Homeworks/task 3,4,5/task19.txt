@@ -1,0 +1,6 @@
+
+-- Task 19
+-- select date_part('year', order_date) as year, count(*) as total_orders
+-- from orders
+-- group by date_part('year', order_date)
+-- order by date_part('year', order_date);

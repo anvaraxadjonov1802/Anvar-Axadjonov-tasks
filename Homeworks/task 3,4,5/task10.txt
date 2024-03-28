@@ -1,0 +1,13 @@
+
+
+-- Task 10
+-- select products.product_id, products.product_name, orders.customer_id, customers.company_name, max(order_details.unit_price) as max_unit_price
+-- from  products
+-- join categories on products.category_id = categories.category_id
+-- join order_details on products.product_id = order_details.product_id
+-- join orders on order_details.order_id = orders.order_id
+-- join customers on orders.customer_id = customers.customer_id
+-- where categories.category_name = '1-kategoriya'
+-- group by products.product_id, products.product_name, orders.customer_id, customers.company_name
+-- order by max_unit_price desc
+-- limit 10;

@@ -1,0 +1,9 @@
+
+-- Task 17
+-- select customers.customer_id, customers.company_name, sum(order_details.unit_price * order_details.quantity) as total_amount
+-- from customers
+-- join orders on customers.customer_id = orders.customer_id
+-- join order_details on orders.order_id = order_details.order_id
+-- group by customers.customer_id, customers.company_name
+-- order by total_amount desc
+-- limit 5;

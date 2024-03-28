@@ -1,0 +1,4 @@
+-- Task 12
+-- select count(*) as company_count
+-- from customers where city = 'London' and customer_id not in (
+-- select customer_id from orders);

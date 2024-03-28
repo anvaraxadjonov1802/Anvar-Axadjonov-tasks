@@ -1,0 +1,10 @@
+
+
+-- Task 5
+-- select products.category_id, categories.category_name, count(*) as total_orders
+-- from orders
+-- join order_details on orders.order_id = order_details.order_id
+-- join products on order_details.product_id = products.product_id
+-- join categories on products.category_id = categories.category_id
+-- group by products.category_id, categories.category_name
+-- order by total_orders desc;

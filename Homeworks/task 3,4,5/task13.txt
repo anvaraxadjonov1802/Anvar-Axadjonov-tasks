@@ -1,0 +1,6 @@
+
+-- Task 13
+-- select categories.category_name, max(products.unit_price) as max_price
+-- from products
+-- join categories on products.category_id = categories.category_id
+-- group by categories.category_name;

@@ -1,0 +1,7 @@
+
+-- Task 9
+-- select products.product_id, products.product_name, sum(order_details.quantity) as total_order
+-- from products
+-- left join order_details on products.product_id = order_details.product_id
+-- group by products.product_id, products.product_name
+-- order by total_order asc;

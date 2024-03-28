@@ -1,0 +1,9 @@
+
+-- Task 3
+-- select products.product_name, suppliers.company_name, count(*) as totalOrders from orders 
+-- join order_details on orders.order_id = order_details.order_id
+-- join products on order_details.product_id = products.product_id
+-- join suppliers on products.supplier_id = suppliers.supplier_id
+-- group by products.product_name, suppliers.company_name
+-- order by totalOrders desc
+-- limit 1;

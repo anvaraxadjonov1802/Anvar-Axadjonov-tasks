@@ -1,0 +1,7 @@
+
+-- Task 2
+-- select city from (
+-- select city from Employees
+-- union
+-- select city from Customers
+-- ) as Cities;

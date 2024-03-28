@@ -1,0 +1,6 @@
+-- Task 1
+-- select products.product_id, product_name, company_name, orders.order_date from orders
+-- join order_details on orders.order_id = order_details.order_id
+-- join products on order_details.product_id = products.product_id
+-- join suppliers on suppliers.supplier_id = products.supplier_id
+-- where order_date >= '1996-07-01' and order_date <= '1996-07-31';

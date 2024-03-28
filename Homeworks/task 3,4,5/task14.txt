@@ -1,0 +1,8 @@
+
+-- Task 14
+-- select customers.customer_id, customers.contact_name, count(orders.order_id) as total_order
+-- from customers
+-- join orders on customers.customer_id = orders.customer_id
+-- group by customers.customer_id, customers.customer_id
+-- order by total_order desc
+-- limit 10; 

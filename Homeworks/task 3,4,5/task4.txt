@@ -1,0 +1,10 @@
+
+-- Task 4
+-- SELECT products.product_name, MIN(order_details.unit_price) AS MinUnitPrice, suppliers.company_name, COUNT(*) AS TotalOrders
+-- FROM Orders
+-- JOIN order_details ON orders.order_id = order_details.order_id
+-- JOIN  products ON order_details.product_id = products.product_id
+-- JOIN suppliers ON products.supplier_id = suppliers.supplier_id
+-- GROUP BY products.product_name, suppliers.company_name
+-- ORDER BY TotalOrders DESC, MinUnitPrice ASC
+-- LIMIT 1;

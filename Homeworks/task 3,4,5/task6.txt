@@ -1,0 +1,8 @@
+
+
+-- Task 6
+-- select employees.employee_id, employees.first_name, employees.last_name, count(orders.order_id) as total_orders
+-- from employees left join orders on employees.employee_id = orders.employee_id
+-- where country = 'USA'
+-- group by employees.employee_id, employees.first_name, employees.last_name
+-- order by total_orders desc;

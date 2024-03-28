@@ -1,0 +1,7 @@
+
+-- Task 18 error berdi
+-- select employee_id, first_name, last_name, count(*) as total_orders
+-- from employees 
+-- left join orders on employees.employee_id = orders.employee_id
+-- group by employee_id, first_name, last_name
+-- having count(*) < 50 or count(*) is null;

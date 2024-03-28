@@ -1,0 +1,8 @@
+
+-- Task 15
+-- select products.product_id, products.product_name, sum(order_details.quantity) as total_sold_quantity
+-- from products
+-- join order_details on products.product_id = order_details.product_id
+-- group by products.product_id, products.product_name
+-- order by total_sold_quantity asc
+-- limit 10;
